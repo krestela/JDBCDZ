@@ -1,4 +1,4 @@
-package model;
+package hibernate.model;
 
 import lombok.*;
 
