@@ -1,15 +1,14 @@
-package service;
+package hibernate.service;
 
-import model.Employee;
+import hibernate.model.Employee;
 
-import java.awt.*;
 import java.util.List;
 
 public interface EmployeeDAO {
-    void add(Employee employee);
+    Integer add(Employee employee);
 
     Employee getByID(int id);
     List<Employee> getAllEmployee();
     void updateEmployee (int id, Employee employee);
-    void deleteEmployee(int id);
+    void deleteEmployee(Employee employee);
 }
